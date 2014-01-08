@@ -106,13 +106,14 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(coffee_run_node src/coffee_run_node.cpp)
+# add_executable(coffee_run src/main.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(coffee_run_node coffee_run_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(coffee_run_node
+# target_link_libraries(coffee_run
 #   ${catkin_LIBRARIES}
 # )
 

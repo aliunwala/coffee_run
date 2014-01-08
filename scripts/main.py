@@ -19,10 +19,10 @@ def coffee_run():
 
     client = actionlib.SimpleActionClient("move_base/goal", MoveBaseAction)
     rospy.loginfo("Waiting For Server")
-    #client.wait_for_server()
-    goal = MoveBaseAction()
-    client.send_goal(goal)
-    rospy.loginfo("Goal to Elevator Sent")
+    client.wait_for_server()
+    #goal = MoveBaseAction()
+    #client.send_goal(goal)
+    #rospy.loginfo("Goal to Elevator Sent")
     rospy.loginfo("Moving to Elevator Now")
     #client.wait_for_result(rospy.Duration.from_sec(5.0))
 
